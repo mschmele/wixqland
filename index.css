@@ -1,0 +1,221 @@
+* {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	background-color: #efe0b7;
+}
+
+#dvBodyWrapper {
+	text-align: center;
+}
+
+#dvLogoHeader div {
+	background-color: #FFFFFF !important;
+	padding-bottom: 25px;
+}
+#dvLogoHeader img {
+  	max-width: 80%;
+	height: auto;
+	margin: 0 auto;
+	transform: translate(10%, 3%);
+	-webkit-transform: translate(10%, 3%);
+ }
+
+#dvHeaderBottom {
+	height: 10px;
+	background-color: #FF9A00;
+}
+
+#dvBody {
+	position: relative;
+}
+
+.main-color {
+	background-color: #efe0b7;
+}
+
+#dvPlayerBackground {
+	background: url("http://mumm.millersville.edu/files/4513/9794/7403/Screen_Shot_2014-04-19_at_6.43.22_PM.png");
+	height: 450px;
+	opacity: 0.5;
+	background-repeat:no-repeat;
+	background-position: center center;
+
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+
+#dvAbout {
+
+	font-size: 20px;
+	position: absolute;
+	color: #3E352C;
+	top: 20%;
+  	left: 50%;
+	  
+  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+}
+#dvFancyPlayer {
+	position: absolute;
+	background-color: rgb(255,169,76);
+	top: 35%;
+  	left: 50%;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	padding-top: 5px;
+	padding-bottom: 5px;
+
+  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+	text-align: center;
+	width: auto;
+	vertical-align: middle;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/*bottom internal shadow*/
+	box-shadow: 0 5px 2px #5B3700; 
+
+
+  	-o-transition: all .13s ease-in-out;
+  	-ms-transition:all .13s ease-in-out;
+  	-moz-transition:all .13s ease-in-out;
+  	-webkit-transition:all .13s ease-in-out;
+}
+
+#dvFancyPlayer:hover {
+	cursor: pointer;
+	box-shadow: 0 9px 10px #5B3700; 
+}
+
+#playerText {
+	font-size: 40px;
+	color: #FFF6ED;
+	text-decoration: none;
+}
+
+.butt {
+	color: #FFF6ED;
+	font-size:40px; 
+	text-decoration: none;
+  	transform: translateY(5%);
+
+  	-o-transition: all .25s ease-in-out;
+  	-ms-transition:all .25s ease-in-out;
+  	-moz-transition:all .25s ease-in-out;
+  	-webkit-transition:all .25s ease-in-out;
+}
+
+.sectionHeader {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: #FF9A00;
+	font-size: 30px;
+}
+
+hr {
+	margin-top: -3px; 
+	background: #d6c69b; 
+	border: 0; height: 2px;
+}
+
+#dvRequestForm {
+	max-width: 20%;
+  	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+.requestForm {
+	margin-bottom: 5px;
+}
+.btn {
+	color: #EFE0B9 !important;
+	background-color: #FF9A00 !important;
+}
+::-webkit-input-placeholder {
+   color: #FF9A00 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #FF9A00 !important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #FF9A00 !important;  
+}
+
+:-ms-input-placeholder {  
+   color: #FF9A00 !important;  
+}
+
+#dvPGridLabel:hover {
+	cursor: pointer;
+}
+
+#dvProgramGrid {
+	margin: auto;
+	cursor: pointer;
+	
+}
+
+#dvProgramGrid > img {
+  	width: 320px;
+  	height: 240px;
+  	-o-transition: all .25s ease-in-out;
+  	-ms-transition:all .25s ease-in-out;
+  	-moz-transition:all .25s ease-in-out;
+  	-webkit-transition:all .25s ease-in-out;
+}
+
+.not-watching {
+	box-shadow: 0 5px 5px #5B3700;
+}
+
+.dvOrangeFooter {
+	background-color: #ff9a00;
+	height: 200px;
+}
+
+.dvGreyFooter {
+	background-color: #3d362c;
+	height: 50px;
+}
+
+/*** Media queries n' shit ***/
+@media only screen and (max-width: 400px) {
+	#playerText {
+		font-size: 20px;
+	}
+
+	#dvPlayerBackground {
+		height: 320px;
+	}   
+
+	#dvAbout {
+		font-size: 12px;
+	}
+	
+	#playerText {
+		font-size: 20px;
+	}
+	
+	.butt {
+		font-size: 20px;
+	}
+	
+	#dvProgramGrid > img {
+		max-width: 240px;
+		max-height: 200px;
+	}
+	
+	.sectionHeader {
+		font-size: 15px;	
+	}
+}
