@@ -13,6 +13,8 @@ $(document).ready(function() {
 	var easter_egg = new Konami();
 	easter_egg.code = function() { womboCombo.play(); }
 	easter_egg.load();
+	
+	fartscroll(200);
 
 	$('#dvBody').on('click', '#dvFancyPlayer', function (e) {
 		isPlaying = !isPlaying;
